@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WanderPulse | Discover Your Next Adventure</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="logo">Wander<span>Pulse</span></a>
+            <ul class="nav-menu">
+                <li><a href="#" class="active">Explore</a></li>
+                <li><a href="#">Destinations</a></li>
+                <li><a href="#">Tours</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <button class="btn btn-secondary">Sign In</button>
+                <button class="btn btn-primary">Contact Expert</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Interactive Hero Finder Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Escape the Ordinary, <span>Explore the World</span></h1>
+            <p>Curated premium travel experiences mapping unmatched global scenic trails, historic cities, and pristine beaches.</p>
+            
+            <!-- Global Query Filter Engine Box -->
+            <div class="search-container">
+                <div class="search-input">
+                    <label for="search-destination">Where to?</label>
+                    <input type="text" id="search-destination" placeholder="Country, city, or landmark...">
+                </div>
+                <div class="search-input border-left">
+                    <label for="search-duration">Duration</label>
+                    <input type="text" id="search-duration" placeholder="e.g., 5-7 Days...">
+                </div>
+                <button class="btn btn-primary" id="search-btn">🔍 Search Tours</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Workspace Grid -->
+    <section class="listings-section">
+        <div class="section-header">
+            <h2>Trending Tour Packages</h2>
+            <p>Handcrafted travel itineraries tailored for unforgettable memories.</p>
+        </div>
+
+        <!-- Category Active Pill Filter Row -->
+        <div class="filter-tabs-container">
+            <button class="tab-pill active" data-filter="all">All Packages</button>
+            <button class="tab-pill" data-filter="Adventure">Adventure</button>
+            <button class="tab-pill" data-filter="Cultural">Cultural</button>
+            <button class="tab-pill" data-filter="Relaxation">Relaxation</button>
+        </div>
+
+        <!-- Dynamic Destination Inject Grid Container -->
+        <div class="destination-grid" id="destination-container">
+            <!-- JavaScript injected elements will render here dynamically -->
+        </div>
+    </section>
+
+    <!-- Dynamic Trip Booking Modal Drawer -->
+    <div class="modal-overlay" id="booking-modal">
+        <div class="modal-content">
+            <span class="close-modal" id="close-modal">&times;</span>
+            <h3 id="modal-tour-title">Book Tour Title</h3>
+            <p id="modal-tour-price-rate" class="modal-subtitle">Starting from $0.00 / person</p>
+            
+            <form id="booking-form" class="booking-form">
+                <div class="form-group">
+                    <label for="traveler-name">Full Name *</label>
+                    <input type="text" id="traveler-name" required placeholder="John Doe">
+                </div>
+                <div class="form-group">
+                    <label for="travel-date">Preferred Departure Date *</label>
+                    <input type="date" id="travel-date" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="traveler-count">Number of Guests *</label>
+                        <input type="number" id="traveler-count" min="1" max="10" value="1" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Estimated Total Budget</label>
+                        <div id="live-total-price" style="font-size: 1.25rem; font-weight: 700; color: #059669; padding-top: 8px;">$0.00</div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Confirm Booking Request</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Core Brand Value Propositions Footer Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 WanderPulse Global Travel Registry Agency. Crafted for fluid itinerary mapping.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

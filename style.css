@@ -1,0 +1,447 @@
+/* Structural Clean Variable Core Custom Properties Setup */
+:root {
+    --primary-teal: #0d9488;
+    --primary-teal-hover: #0f766e;
+    --secondary-slate: #f1f5f9;
+    --text-dark: #0f172a;
+    --text-muted: #64748b;
+    --bg-light: #f8fafc;
+    --bg-white: #ffffff;
+    --border-light: #e2e8f0;
+    --shadow-premium: 0 10px 15px -3px rgba(0,0,0,0.05), 0 4px 6px -4px rgba(0,0,0,0.05);
+    --radius-sm: 8px;
+    --radius-lg: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+/* Structural Universal Layout Buttons definition rules */
+.btn {
+    padding: 10px 22px;
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: none;
+}
+
+.btn-primary {
+    background-color: var(--primary-teal);
+    color: var(--bg-white);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-teal-hover);
+}
+
+.btn-secondary {
+    background-color: var(--secondary-slate);
+    color: var(--text-dark);
+}
+
+.btn-secondary:hover {
+    background-color: #cbd5e1;
+}
+
+.btn-block {
+    width: 100%;
+    margin-top: 15px;
+    padding: 14px;
+}
+
+/* Header Navbar Configuration Component */
+.header {
+    background-color: var(--bg-white);
+    border-bottom: 1px solid var(--border-light);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 20px;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--text-dark);
+    letter-spacing: -0.5px;
+}
+
+.logo span {
+    color: var(--primary-teal);
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--text-muted);
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.nav-menu a:hover, .nav-menu a.active {
+    color: var(--primary-teal);
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+/* Immersive Hero Booking Search Interface Layout */
+.hero-section {
+    background: linear-gradient(rgba(15, 23, 42, 0.45), rgba(15, 23, 42, 0.3)), 
+                url('https://unsplash.com') no-repeat center center/cover;
+    padding: 120px 20px;
+    text-align: center;
+    color: var(--bg-white);
+}
+
+.hero-content h1 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    letter-spacing: -1px;
+}
+
+.hero-content h1 span {
+    color: #5eead4;
+}
+
+.hero-content p {
+    font-size: 1.15rem;
+    max-width: 650px;
+    margin: 0 auto 40px auto;
+    opacity: 0.95;
+}
+
+.search-container {
+    background-color: var(--bg-white);
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 12px 20px;
+    border-radius: var(--radius-lg);
+    display: flex;
+    box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
+    align-items: center;
+    color: var(--text-dark);
+    text-align: left;
+}
+
+.search-input {
+    flex: 1;
+    padding: 5px 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.search-input label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--text-muted);
+    letter-spacing: 0.5px;
+}
+
+.search-input input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding-top: 4px;
+    font-weight: 500;
+}
+
+.border-left {
+    border-left: 1px solid var(--border-light);
+}
+
+.search-container .btn {
+    padding: 14px 28px;
+    border-radius: var(--radius-sm);
+}
+
+/* Curated Package Explorer Listings Workspace Row */
+.listings-section {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.section-header {
+    margin-bottom: 35px;
+}
+
+.section-header h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.section-header p {
+    color: var(--text-muted);
+}
+
+/* Category Filter Pill Tabs */
+.filter-tabs-container {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 35px;
+    overflow-x: auto;
+    padding-bottom: 5px;
+}
+
+.tab-pill {
+    background: var(--bg-white);
+    border: 1px solid var(--border-light);
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.2s;
+    color: var(--text-muted);
+}
+
+.tab-pill:hover, .tab-pill.active {
+    background-color: var(--primary-teal);
+    color: var(--bg-white);
+    border-color: var(--primary-teal);
+}
+
+/* Multi-Column Layout Grid for Tour Cards */
+.destination-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+/* Interactive Tour Package Card Layout Component */
+.tour-card {
+    background-color: var(--bg-white);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-premium);
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+}
+
+.tour-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 25px -5px rgba(0,0,0,0.08);
+}
+
+.tour-img-container {
+    height: 220px;
+    overflow: hidden;
+    position: relative;
+}
+
+.tour-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tour-tag {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: rgba(15, 23, 42, 0.75);
+    backdrop-filter: blur(4px);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.tour-body {
+    padding: 24px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.tour-meta {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+.tour-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.tour-description {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.tour-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--border-light);
+    padding-top: 15px;
+    margin-top: auto;
+}
+
+.tour-price {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--primary-teal);
+}
+
+.tour-price span {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    font-weight: 400;
+}
+
+/* Booking Calculation Modal Form Drawer styles */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(15, 23, 42, 0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 20px;
+}
+
+.modal-content {
+    background-color: var(--bg-white);
+    padding: 30px;
+    border-radius: var(--radius-lg);
+    max-width: 500px;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    animation: slideUp 0.3s ease-out;
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.close-modal {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: var(--text-muted);
+}
+
+.modal-subtitle {
+    color: var(--primary-teal);
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.booking-form .form-group {
+    margin-bottom: 16px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.booking-form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+.booking-form input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-sm);
+    outline: none;
+    font-size: 0.95rem;
+}
+
+.booking-form input:focus {
+    border-color: var(--primary-teal);
+}
+
+/* Global Footer structural styles */
+.footer {
+    text-align: center;
+    padding: 40px 20px;
+    border-top: 1px solid var(--border-light);
+    background-color: var(--bg-white);
+    margin-top: 80px;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+/* Liquid Breakpoint Media Adaptations for Mobile viewports */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+    .search-container {
+        flex-direction: column;
+        border-radius: var(--radius-sm);
+        padding: 15px;
+        gap: 12px;
+    }
+    .border-left {
+        border-left: none;
+        border-top: 1px solid var(--border-light);
+        width: 100%;
+        padding-top: 10px;
+    }
+    .search-container .btn {
+        width: 100%;
+    }
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}
