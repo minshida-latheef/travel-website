@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WanderPulse | Luxury Travel & Immersive Adventures</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header Navigation (Synced Architecture) -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="home.html" class="logo">Wander<span>Pulse</span></a>
+            <ul class="nav-menu">
+                <li><a href="home.html" class="active">Home</a></li>
+                <li><a href="index.html">Explore Tours</a></li>
+                <li><a href="#">Destinations</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <button class="btn btn-secondary">Sign In</button>
+                <button class="btn btn-primary">Contact Expert</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Master Brand Presentation Hero Block -->
+    <section class="hero-section" style="background: linear-gradient(rgba(15, 23, 42, 0.4), rgba(15, 23, 42, 0.5)), url('https://unsplash.com') no-repeat center center/cover; padding: 140px 20px;">
+        <div class="hero-content">
+            <h1>Crafting Your <span>Ultimate Escape</span></h1>
+            <p>Uncover private coastal villas, rugged mountain treks, and ancient cultural heritage loops designed completely around your timeline.</p>
+            <div style="margin-top: 25px;">
+                <a href="index.html" class="btn btn-primary" style="text-decoration: none; padding: 16px 40px; font-size: 1.1rem; border-radius: var(--radius-sm); box-shadow: 0 10px 25px rgba(13,148,136,0.3);">
+                    Browse Curated Itineraries &rarr;
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Matrix Section -->
+    <section class="listings-section" style="margin-top: 80px;">
+        <div class="section-header" style="text-align: center; margin-bottom: 50px;">
+            <h2>Why Travelers Choose WanderPulse</h2>
+            <p>Setting the industry benchmark for bespoke hospitality and safe global transit</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px;">
+            <div class="tour-card" style="padding: 30px; text-align: center; border-radius: var(--radius-lg);">
+                <div style="font-size: 2.5rem; margin-bottom: 15px;">🗺️</div>
+                <h3 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 10px;">Expert Local Guides</h3>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">Navigate off-the-beaten-path locations with certified cultural curators native to the region.</p>
+            </div>
+            <div class="tour-card" style="padding: 30px; text-align: center; border-radius: var(--radius-lg);">
+                <div style="font-size: 2.5rem; margin-bottom: 15px;">🛡️</div>
+                <h3 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 10px;">100% Secure Bookings</h3>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">Flexible cancellation policies matched with comprehensive premium global travel insurance matrices.</p>
+            </div>
+            <div class="tour-card" style="padding: 30px; text-align: center; border-radius: var(--radius-lg);">
+                <div style="font-size: 2.5rem; margin-bottom: 15px;">✨</div>
+                <h3 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 10px;">Tailored Concierge</h3>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">Enjoy continuous 24/7 on-trip chat support routing to solve itinerary updates seamlessly.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curated Spotlight Destination Showcase Categories -->
+    <section style="background-color: var(--bg-white); padding: 80px 20px; margin-top: 80px; border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light);">
+        <div class="listings-section" style="margin: 0 auto;">
+            <div class="section-header" style="margin-bottom: 40px;">
+                <h2>Explore by Travel Style</h2>
+                <p>Match your mood to seasonal geographic clusters curated globally</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;">
+                <!-- Style Card 1 -->
+                <div class="tour-card" style="cursor: pointer;" onclick="window.location.href='index.html'">
+                    <div class="tour-img-container" style="height: 180px;">
+                        <img src="https://unsplash.com" alt="Mediterranean Coast">
+                    </div>
+                    <div style="padding: 20px;">
+                        <h4 style="font-weight: 700; font-size: 1.1rem; margin-bottom: 4px;">Tropical Coastal Luxury</h4>
+                        <p style="color: var(--text-muted); font-size: 0.85rem;">Greece, Maldives, Amalfi Coast</p>
+                    </div>
+                </div>
+                <!-- Style Card 2 -->
+                <div class="tour-card" style="cursor: pointer;" onclick="window.location.href='index.html'">
+                    <div class="tour-img-container" style="height: 180px;">
+                        <img src="https://unsplash.com" alt="Alpine Peaks">
+                    </div>
+                    <div style="padding: 20px;">
+                        <h4 style="font-weight: 700; font-size: 1.1rem; margin-bottom: 4px;">Mountain Ridge Treks</h4>
+                        <p style="color: var(--text-muted); font-size: 0.85rem;">Swiss Alps, Patagonia, Rockies</p>
+                    </div>
+                </div>
+                <!-- Style Card 3 -->
+                <div class="tour-card" style="cursor: pointer;" onclick="window.location.href='index.html'">
+                    <div class="tour-img-container" style="height: 180px;">
+                        <img src="https://unsplash.com" alt="Ancient Heritage">
+                    </div>
+                    <div style="padding: 20px;">
+                        <h4 style="font-weight: 700; font-size: 1.1rem; margin-bottom: 4px;">Ancient Heritage & Culture</h4>
+                        <p style="color: var(--text-muted); font-size: 0.85rem;">Kyoto, Rome, Machu Picchu</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Community Review Callout Banner -->
+    <section class="listings-section" style="margin-top: 80px; margin-bottom: 40px; background: var(--text-dark); color: white; padding: 60px 40px; border-radius: var(--radius-lg); text-align: center;">
+        <div style="max-width: 700px; margin: 0 auto;">
+            <div style="color: #5eead4; font-size: 1.5rem; margin-bottom: 15px;">★★★★★</div>
+            <h3 style="font-size: 1.8rem; font-weight: 700; margin-bottom: 20px; color: white;">"An Unforgettable Swiss Journey"</h3>
+            <p style="color: #94a3b8; font-size: 1.05rem; line-height: 1.7; font-style: italic; margin-bottom: 25px;">
+                "The Alpine wonderland itinerary mapped by WanderPulse was flawless. From private trail coordinates to premium hotel bookings, everything executed smoothly. Will use again next season!"
+            </p>
+            <span style="font-weight: 700; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; color: #5eead4;">— Clara & David, Vancouver</span>
+        </div>
+    </section>
+
+    <!-- Email Lead Conversion Segment -->
+    <section style="max-width: 600px; margin: 80px auto 40px auto; padding: 0 20px; text-align: center;">
+        <h3 style="font-size: 1.6rem; font-weight: 700; margin-bottom: 10px;">Get Secret Itineraries</h3>
+        <p style="color: var(--text-muted); margin-bottom: 25px; font-size: 0.95rem;">Join our premium travel circle to receive monthly flight deals and hidden destination guides straight to your inbox.</p>
+        
+        <form style="display: flex; gap: 10px;" onsubmit="event.preventDefault(); alert('Welcome aboard! Check your inbox for your first hidden guide coupon.'); this.reset();">
+            <input type="email" placeholder="Your email address" required style="flex-grow: 1; padding: 12px 16px; border: 1px solid var(--border-light); border-radius: var(--radius-sm); outline: none; font-size: 0.95rem;">
+            <button type="submit" class="btn btn-primary" style="white-space: nowrap;">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- Footer Base Structural Node -->
+    <footer class="footer">
+        <p>&copy; 2026 WanderPulse Global Travel Registry Agency. Crafted for fluid itinerary mapping.</p>
+    </footer>
+
+</body>
+</html>
