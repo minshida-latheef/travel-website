@@ -72,5 +72,5 @@ Because this project is built entirely as a pure \*\*frontend application archit
 
 This system operates entirely as a \*\*100% frontend implementation template\*\*. Booking data variables and pricing fields live transiently inside browser memory. Refreshing the browser or closing the application tab will reset form data contexts back to baseline parameters.
 
-
+[click to view](https://minshida-latheef.github.io/travel-website/)
 
